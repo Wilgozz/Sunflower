@@ -9,3 +9,39 @@
 .pessoa{
     margin-right: 20px;
 }
+
+.imgum{
+    width: 100%;
+}
+
+.imgquatro{
+    width: 100%;
+}
+
+.imgtres{
+    width: 100%;
+}
+
+.corBotao{
+    background-color: #DCDCDC !important;
+    
+}
+
+.produtosVendidos{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.botaoProdutos{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.textoVideo{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.textoSunflower1{
+    margin-top: 100px;
+}

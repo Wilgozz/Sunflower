@@ -10,18 +10,6 @@
     margin-right: 20px;
 }
 
-.imgum{
-    width: 100%;
-}
-
-.imgquatro{
-    width: 100%;
-}
-
-.imgtres{
-    width: 100%;
-}
-
 .corBotao{
     background-color: #DCDCDC !important;
     
@@ -44,4 +32,17 @@
 
 .textoSunflower1{
     margin-top: 100px;
+}
+
+.textoSunflower2{
+    margin-top: 50px;
+}
+
+.textoSunflower3{
+    margin-top: 50px;
+}
+
+.textoDepoimentos{
+    margin-top: 100px;
+    margin-bottom: 50px;
 }

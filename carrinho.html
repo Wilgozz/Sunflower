@@ -2,6 +2,9 @@
 <html lang="pt-br">
 
 <head>
+    <script type="text/javascript" src="javascript/jquery.js"></script>
+    <script type="text/javascript" src="javascript/carrinho.js"></script>
+
     <link rel="shortcut icon" href="imagens/girassol.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
 
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="index.html">Página inicial<span class="sr-only">(current)</span></a>
                 </li>
 
@@ -35,7 +38,7 @@
                     <a class="nav-link" href="paginaFlores.html">Flores</a>
                 </li>
 
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="paginaVelas.html">Velas aromáticas</a>
                 </li>
 
@@ -80,80 +83,42 @@
         </div>
     </nav>
 
-
     <div class="container">
 
-        <h1 class="text-center produtosVendidos">Velas aromáticas</h1>
-    
         <div class="row">
-    
-          <div class="col-md-4">
-    
-            <!--card1-->
-    
-            <div class="card mb-5">
-              <img class="card-img-top" src="imagens/produtos/30.png" alt="Imagem de capa do card">
-              <div class="card-body">
-                <h5 class="card-title">Vela aromática de lavanda</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
-                  <button class="btn btn-outline-success" onclick="addCarrinho('Vela aromática de lavanda','19.90')">Adicionar ao Carrinho</button>
-              </div>
-            </div>
-    
-          </div>
-    
-          <div class="col-md-4">
-    
-            <!--card2-->
-    
-            <div class="card mb-5">
-              <img class="card-img-top" src="imagens/produtos/31.png" alt="Imagem de capa do card">
-              <div class="card-body">
-                <h5 class="card-title">Vela aromática cítrica</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
-                  <button class="btn btn-outline-success" onclick="addCarrinho('Vela aromática cítrica','19.90')">Adicionar ao Carrinho</button>
-              </div>
-            </div>
-    
-          </div>
-    
-          <div class="col-md-4">
-    
-            <!--card3-->
-    
-            <div class="card mb-5">
-              <img class="card-img-top" src="imagens/produtos/32.png" alt="Imagem de capa do card">
-              <div class="card-body">
-                <h5 class="card-title">Vela aromática de rosas</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
-                <button class="btn btn-outline-success" onclick="addCarrinho('Vela aromática de rosas','19.90')">Adicionar ao Carrinho</button>
-              </div>
-            </div>
-    
-          </div>
 
-          <div class="col-md-4">
-    
-            <!--card4-->
-    
-            <div class="card mb-5">
-              <img class="card-img-top" src="imagens/produtos/33.png" alt="Imagem de capa do card">
-              <div class="card-body">
-                <h5 class="card-title">Vela aromática de lírio</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
-                <button class="btn btn-outline-success" onclick="addCarrinho('Vela aromática de lírio','19.90')">Adicionar ao Carrinho</button>
-              </div>
+            <div class="col-md-8">
+
+                <h1 class="display-5 tituloCarrinho">Seu carrinho</h1>
+
+                <ul class="list-group list-group-flush listaDoCarrinho">
+            
+                  </ul>
+
+                  <button type="button" class="btn btn-success botaoCarrinho">Finalizar compra</button>
+
             </div>
-    
-          </div>
 
 
-    
-          </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

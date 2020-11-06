@@ -27,12 +27,12 @@
         <div class="collapse navbar-collapse" id="navbarNav">
 
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Página inicial<span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="paginaFlores.html">Flores</a>
+                    <a class="nav-link active" href="paginaFlores.html">Flores</a>
                 </li>
 
                 <li class="nav-item">
@@ -62,22 +62,340 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
             </form>
 
-            <!--icone carrinho-->
-            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cart3 carrinho" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
-            </svg>
+             <!--icone carrinho-->
+      <a href="carrinho.html"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cart3 carrinho" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+      </svg>
+      </a>
 
-            <!--icone pessoa-->
-            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-person pessoa" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                    d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-            </svg>
+      <!--icone pessoa-->
+      <a href="paginaLogin.html"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-person pessoa" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+      </svg>
+      </a>
         </div>
     </nav>
 
+
+    <div class="container">
+
+        <h1 class="text-center produtosVendidos">Flores</h1>
+    
+        <div class="row">
+    
+          <div class="col-md-4">
+    
+            <!--card1-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/1.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Orquída Rosa</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                  <button class="btn btn-outline-success" onclick="addCarrinho('Orquída Rosa','52.90')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="col-md-4">
+    
+            <!--card2-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/2.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Tulipas</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                  <button class="btn btn-outline-success" onclick="addCarrinho('Tulipas','32.90')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="col-md-4">
+    
+            <!--card3-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/3.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Vaso de Girassóis</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                <button class="btn btn-outline-success" onclick="addCarrinho('Vaso de Girassóis','78.90')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+
+          <div class="col-md-4">
+    
+            <!--card4-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/4.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Hortênsias</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                <button class="btn btn-outline-success" onclick="addCarrinho('Hortênsias','29.90')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+
+          <div class="col-md-4">
+    
+            <!--card5-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/5.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Vaso com Lavandas</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                  <button class="btn btn-outline-success" onclick="addCarrinho('Vaso com Lavandas','38.90')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+
+          <div class="col-md-4">
+    
+            <!--card6-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/6.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Cravo</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                  <button class="btn btn-outline-success" onclick="addCarrinho('Cravo','42.90')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="col-md-4">
+    
+            <!--card7-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/7.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Vaso de Lírios</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                  <button class="btn btn-outline-success" onclick="addCarrinho('Lírio','67.90')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="col-md-4">
+    
+            <!--card8-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/8.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Jasmim</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                <button class="btn btn-outline-success" onclick="addCarrinho('Jasmin','53.90')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+
+          <div class="col-md-4">
+    
+            <!--card9-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/9.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Camomila</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                <button class="btn btn-outline-success" onclick="addCarrinho('Camomila','28.90')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+
+          <div class="col-md-4">
+    
+            <!--card10-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/10.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Vaso de Rosas</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                  <button class="btn btn-outline-success" onclick="addCarrinho('Rosas cor de rosa','88.90')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+
+
+          <div class="col-md-4">
+    
+            <!--card11-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/11.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Rosas Vermelhas</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                  <button class="btn btn-outline-success" onclick="addCarrinho('Rosas vermelhas','36.50')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="col-md-4">
+    
+            <!--card12-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/12.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Violeta</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                  <button class="btn btn-outline-success" onclick="addCarrinho('Violeta','24.99')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="col-md-4">
+    
+            <!--card13-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/13.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Azaleia</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                <button class="btn btn-outline-success" onclick="addCarrinho('Azaleia','27.90')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+
+          <div class="col-md-4">
+    
+            <!--card14-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/14.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Antúrio</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                <button class="btn btn-outline-success" onclick="addCarrinho('Anturio','42.90')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+
+          <div class="col-md-4">
+    
+            <!--card15-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/15.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Vaso de Begônia</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                  <button class="btn btn-outline-success" onclick="addCarrinho('Begônia','28.90')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+
+          <div class="col-md-4">
+    
+            <!--card16-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/16.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Camélia</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                  <button class="btn btn-outline-success" onclick="addCarrinho('Camélia','37.90')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+
+          <div class="col-md-4">
+    
+            <!--card17-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/17.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Crisântemo</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                  <button class="btn btn-outline-success" onclick="addCarrinho('Crisântemo','32.90')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+
+          <div class="col-md-4">
+    
+            <!--card18-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/18.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Vaso de Gérbera</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                  <button class="btn btn-outline-success" onclick="addCarrinho('Vaso de Gérbera','43.90')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+
+          <div class="col-md-4">
+    
+            <!--card19-->
+    
+            <div class="card mb-5">
+              <img class="card-img-top" src="imagens/produtos/19.png" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Vaso de Margarida</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+                  do card.</p>
+                  <button class="btn btn-outline-success" onclick="addCarrinho('Vaso de Margarida','49.90')">Adicionar ao Carrinho</button>
+              </div>
+            </div>
+    
+          </div>
+
+
+    
+    
+        </div>
 
 
 

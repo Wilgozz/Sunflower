@@ -2,6 +2,10 @@
 <html lang="pt-br">
 
 <head>
+
+  <script type="text/javascript" src="javascript/jquery.js"></script>
+  <script type="text/javascript" src="javascript/javascript.js"></script>
+
   <link rel="shortcut icon" href="imagens/girassol.png" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +55,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="paginaSobreNos.html">Sobre nós</a>
+          <a class="nav-link" href="pag">Sobre nós</a>
         </li>
 
       </ul>
@@ -62,18 +66,21 @@
       </form>
 
       <!--icone carrinho-->
-      <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cart3 carrinho" fill="currentColor"
+      <a href="carrinho.html"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cart3 carrinho" fill="currentColor"
         xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd"
           d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
       </svg>
+      </a>
 
       <!--icone pessoa-->
-      <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-person pessoa" fill="currentColor"
+      <a href="paginaLogin.html"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-person pessoa" fill="currentColor"
         xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd"
           d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
       </svg>
+      </a>
+
     </div>
   </nav>
 
@@ -127,7 +134,7 @@
             <h5 class="card-title">Título do card</h5>
             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
               do card.</p>
-            <a href="#" class="btn btn-primary">Visitar</a>
+            <button class="btn btn-primary" id="botaoAddCarrinho">Adicionar ao Carrinho</button>
           </div>
         </div>
 
@@ -143,7 +150,7 @@
             <h5 class="card-title">Título do card</h5>
             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
               do card.</p>
-            <a href="#" class="btn btn-primary">Visitar</a>
+            <button class="btn btn-primary" id="botaoAddCarrinho">Adicionar ao Carrinho</button>
           </div>
         </div>
 
@@ -159,7 +166,7 @@
             <h5 class="card-title">Título do card</h5>
             <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
               do card.</p>
-            <a href="#" class="btn btn-primary">Visitar</a>
+            <button class="btn btn-primary" onclick="addCarrinho('flor','20')">Adicionar ao Carrinho</button>
           </div>
         </div>
 
@@ -177,69 +184,182 @@
       <source src="video/videoplanta.mp4" type="video/mp4">
     </video>
 
+    <!--depoimentos-->
+
     <h1 class="text-center textoDepoimentos">Depoimentos</h1>
+
 
     <div class="row">
 
       <div class="col-md-4">
 
-
-        <div class="row">
-          <div class="col-md-4">
-            <img src="imagens/thayza.png">
-
-          </div>
-
-          <div class="col-md-8">
-            <h6>Thayza Cristyne</h6>
-            <p class="font-italic">"Toda semana peço flores para deixar minha casa mais alegre, super recomendo."</p>
+        <div class="card">
+          <img class="card-img-top" src="imagens/SimoneAriero.png" alt="Imagem de capa do card">
+          <div class="card-body">
+            <p class="card-text">Flores lindas, e um preço super em conta! Recomendo.</p>
 
           </div>
 
         </div>
 
       </div>
+
+
 
       <div class="col-md-4">
 
-        <div class="row">
-          <div class="col-md-4">
-            <img src="imagens/anaclaudiaaaa.png">
-
-          </div>
-
-          <div class="col-md-8">
-            <h6>Ana Claúdia Tavares</h6>
-            <p class="font-italic">"Pedi flores pela internet e elas chegaram lindas e perfumadas!"</p>
+        <div class="card">
+          <img class="card-img-top" src="imagens/Adir Moreira Decorador3.png" alt="Imagem de capa do card">
+          <div class="card-body">
+            <p class="card-text">Amo as flores, os kits e todos os produtos dessa loja!!!</p>
 
           </div>
 
         </div>
 
       </div>
+
 
       <div class="col-md-4">
 
-        <div class="row">
-          <div class="col-md-4">
-            <img src="imagens/donaneusa.png">
 
-          </div>
-
-          <div class="col-md-8">
-            <h6>Neusa Aparecida de Jesus</h6>
-            <p class="font-italic">"Em toda data comemorativa compro arranjo de orquídeas, são lindas e duram muito."</p>
+        <div class="card">
+          <img class="card-img-top" src="imagens/CasadasFlores.png" alt="Imagem de capa do card">
+          <div class="card-body">
+            <p class="card-text">Amo as flores, os kits e todos os produtos dessa loja!!!</p>
 
           </div>
 
         </div>
 
+
       </div>
+
 
     </div>
 
 
-  </div>
+
+
+
+
+    <!-- Footer -->
+    <hr>
+    <footer class="page-footer font-small stylish-color-dark pt-4">
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+          <hr class="clearfix w-100 d-md-none">
+
+
+          <div class="col-md-6">
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28822.230107779953!2d-49.252595!3d-25.445659!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8b0f452491a6f477!2sPontif%C3%ADcia%20Universidade%20Cat%C3%B3lica%20do%20Paran%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1604505796308!5m2!1spt-BR!2sbr"
+              width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+
+
+          </div>
+
+
+          <div>
+            <!-- Links -->
+            <h1 class="display-4 textoContato">Contato</h1>
+
+            <ul>
+              <li>
+                <h6>(41) 98851-2577</h6>
+              </li>
+              <li>
+                <h6>sunflowerdelivery@gmail.com</h6>
+              </li>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none">
+
+
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none">
+
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
+
+
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+
+
+
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-2">
+            <i class="fab fa-facebook-f">
+              <img src="imagens/facebook.png" alt="some text" width=35 height=35>
+            </i>
+          </a>
+        </li>
+
+
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-2">
+            <i class="fab fa-google-plus-g">
+              <img src="imagens/pinterest.png" alt="some text" width=35 height=35>
+            </i>
+          </a>
+        </li>
+
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-2">
+            <i class="fab fa-twitter">
+              <img src="imagens/twitter.png" alt="some text" width=35 height=35>
+            </i>
+          </a>
+        </li>
+
+
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-">
+            <i class="fab fa-linkedin-in">
+              <img src="imagens/instagram.png" alt="some text" width=35 height=35>
+            </i>
+          </a>
+        </li>
+
+
+        <li class="list-inline-item">
+          <a class="btn-floating btn-dribbble mx-2">
+            <i class="fab fa-dribbble">
+              <img src="imagens/whatsapp.png" alt="some text" width=35 height=35>
+            </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+
+
+    </footer>
+    <!-- Footer -->
 
 
 
@@ -271,30 +391,19 @@
 
 
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-
-
-
-
-
-
-
-
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="javascript/javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript/javascript.js"></script>
 </body>
 
 </html>

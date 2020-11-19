@@ -2,8 +2,6 @@
 <html lang="pt-br">
 
 <head>
-    <script type="text/javascript" src="javascript/funcoes.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN57mkO88IXlQikM9Gp6zA2txiHgxMtJY&callback=initMap" async defer ></script>
     <link rel="shortcut icon" href="imagens/girassol.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
 
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="index.html">Página inicial<span class="sr-only">(current)</span></a>
                 </li>
 
@@ -54,7 +52,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="paginaSobreNos.html">Sobre nós</a>
+                    <a class="nav-link" href="paginaSobreNos.html">Sobre nós</a>
                 </li>
 
             </ul>
@@ -88,17 +86,36 @@
 
             <div class="col-md-6">
 
-                <h1 class="display-5 textoSunflowerSobreNos">Sobre Nós</h1>
+                <h1 class="display-5 textoSunflower1">Página de Cadastro</h1>
+                
 
-                <p class="font-italic font-weight-normal ">
-                    Há mais de 15 anos a Sunflower Delivery, floricultura em Curitiba, trabalha cuidando para levar alegria ao seu lar! 
-                    Nosso objetivo é proporcionar satisfação aos nossos clientes, oferecendo sempre os melhores produtos e um 
-                    atendimento de excelência.
+                <form>
 
-                    Nossa floricultura está localizada na Rua Imaculada Conceição, 1155, em Curitiba. 
+                    <div class="form-group">
+                        <label for="exampleInputNome">Seu nome</label>
+                        <input type="text" class="form-control" id="exampleInputNome" placeholder="Nome">
+                    </div>
 
-                    Pensando na sua facilidade dos nossos clientes, entregamos o seu pedido diretamente em sua residêcia.
-                </p>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Endereço de email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Seu email">
+                        <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com
+                            ninguém.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Senha</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Confirme sua Senha</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                    </div>
+
+                    <button type="button" class="btn btn-success">Cadastrar</button>
+                </form>
 
 
 
@@ -108,7 +125,7 @@
             <div class="col-md-6">
 
 
-                <img  src="imagens/loja.gif">
+                <img class="gifLogin" src="imagens/telaLogin.gif">
 
 
             </div>
@@ -117,129 +134,11 @@
         </div>
 
     </div>
-    
 
-    <div class="tamanhoMapa">
-        <div id="map">
-  
-        </div>
-  
-       </div>
-  
-  
-  
-  
-      <!-- Footer -->
-      <hr>
-      <footer class="page-footer font-small stylish-color-dark pt-4">
-  
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left">
-  
-          <!-- Grid row -->
-          <div class="row">
-  
-            <hr class="clearfix w-100 d-md-none">
-  
-  
-            <div class="col-md-12">
-               <!-- Links -->
-  
-               <ul>
-                
-                   <h6 class =" text-center text-info">Horário de Atendimento</h6>
-  
-                   <h6 class =" text-center">de segunda a sexta das 08h00 às 18h00 ou com horário marcado</h6><br>
-  
-                   <h6 class =" text-center">Rua Imaculada Conceição, 1155  - Prado Velho - Curitiba - PR  -  Fone: 41-3271-1555</h6><br>
-                
-             </div>
-  
-  
-            </div>
-          
-            <!-- Grid column -->
-  
-            <hr class="clearfix w-100 d-md-none">
-  
-  
-            <!-- Grid column -->
-  
-            <hr class="clearfix w-100 d-md-none">
-  
-            <!-- Grid column -->
-            <div class="col-md-2 mx-auto">
-  
-  
-  
-            </div>
-            <!-- Grid column -->
-  
-          </div>
-          <!-- Grid row -->
-  
-        </div>
-        <!-- Footer Links -->
-  
-  
-  
-        <!-- Social buttons -->
-        <ul class="list-unstyled list-inline text-center">
-          <li class="list-inline-item">
-            <a href="https://www.facebook.com/" class="btn-floating btn-fb mx-2">
-              <i>
-                <img src="imagens/facebook.png" alt="some text" width=35 height=35>
-              </i>
-            </a>
-          </li>
-  
-  
-          <li class="list-inline-item">
-            <a href="https://br.pinterest.com/" class="btn-floating btn-gplus mx-2">
-              <i>
-                <img src="imagens/pinterest.png" alt="some text" width=35 height=35>
-              </i>
-            </a>
-          </li>
-  
-          <li class="list-inline-item">
-            <a href="https://twitter.com/login?lang=pt" class="btn-floating btn-tw mx-2">
-              <i>
-                <img src="imagens/twitter.png" alt="some text" width=35 height=35>
-              </i>
-            </a>
-          </li>
-  
-  
-          <li class="list-inline-item">
-            <a href="https://www.instagram.com/" class="btn-floating btn-li mx-">
-              <i>
-                <img src="imagens/instagram.png" alt="some text" width=35 height=35>
-              </i>
-            </a>
-          </li>
-  
-  
-          <li class="list-inline-item">
-            <a href="https://www.whatsapp.com/?lang=pt_br" class="btn-floating btn-dribbble mx-2">
-              <i>
-                <img src="imagens/whatsapp.png" alt="some text" width=35 height=35>
-              </i>
-            </a>
-          </li>
-        </ul>
-  
-        <hr>
-  
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">
-          <a> Desenvolvido por Kamylle Wilgozz</a>
-        </div>
-        <!-- Copyright -->
-  
-  
-      </footer>
-      <!-- Footer -->
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

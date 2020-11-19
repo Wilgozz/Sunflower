@@ -5,6 +5,8 @@
 
   <script type="text/javascript" src="javascript/jquery.js"></script>
   <script type="text/javascript" src="javascript/javascript.js"></script>
+  <script type="text/javascript" src="javascript/funcoes.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN57mkO88IXlQikM9Gp6zA2txiHgxMtJY&callback=initMap" async defer ></script>
 
   <link rel="shortcut icon" href="imagens/girassol.png" />
   <meta charset="UTF-8">
@@ -55,7 +57,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="pag">Sobre nós</a>
+          <a class="nav-link" href="paginaSobreNos.html">Sobre nós</a>
         </li>
 
       </ul>
@@ -131,10 +133,9 @@
         <div class="card">
           <img class="card-img-top" src="imagens/produtos/7.png" alt="Imagem de capa do card">
           <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-              do card.</p>
-            <button class="btn btn-primary" id="botaoAddCarrinho">Adicionar ao Carrinho</button>
+            <h5 class="card-title">Nosso produto mais vendido</h5>
+            <p class="card-text">Nosso produto mais vendido, acesse clicando no botão abaixo</p>
+            <button class="btn btn-outline-success" onclick="addCarrinho('Lírio','67.90')">Adicionar ao Carrinho</button>
           </div>
         </div>
 
@@ -145,12 +146,11 @@
         <!--card2-->
 
         <div class="card">
-          <img class="card-img-top" src="imagens/produtos/27.png" alt="Imagem de capa do card">
+          <img class="card-img-top" src="imagens/produtos/10.png" alt="Imagem de capa do card">
           <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-              do card.</p>
-            <button class="btn btn-primary" id="botaoAddCarrinho">Adicionar ao Carrinho</button>
+            <h5 class="card-title">Nosso produto mais vendido</h5>
+            <p class="card-text">Nosso produto mais vendido, acesse clicando no botão abaixo</p>
+            <button class="btn btn-outline-success" onclick="addCarrinho('Rosas cor de rosa','88.90')">Adicionar ao Carrinho</button>
           </div>
         </div>
 
@@ -161,12 +161,11 @@
         <!--card3-->
 
         <div class="card">
-          <img class="card-img-top" src="imagens/produtos/40.png" alt="Imagem de capa do card">
+          <img class="card-img-top" src="imagens/produtos/12.png" alt="Imagem de capa do card">
           <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-              do card.</p>
-            <button class="btn btn-primary" onclick="addCarrinho('flor','20')">Adicionar ao Carrinho</button>
+            <h5 class="card-title">Nosso produto mais vendido</h5>
+            <p class="card-text">Nosso produto mais vendido, acesse clicando no botão abaixo</p>
+            <button class="btn btn-outline-success" onclick="addCarrinho('Violeta','24.99')">Adicionar ao Carrinho</button>
           </div>
         </div>
 
@@ -175,8 +174,7 @@
 
     </div>
 
-    <button type="button" class="btn btn-lg btn-block corBotao botaoProdutos">Clique aqui para ver mais
-      produtos</button>
+    <a href="paginaFlores.html" class="btn btn-light botaoTodosProdutos">Produtos mais vendidos</a>
 
     <!--video-->
     <h1 class="text-center textoVideo">Como plantar nossos produtos</h1>
@@ -238,7 +236,12 @@
 
     </div>
 
+    <div class="tamanhoMapa">
+      <div id="map">
 
+      </div>
+
+     </div>
 
 
 
@@ -256,29 +259,25 @@
           <hr class="clearfix w-100 d-md-none">
 
 
-          <div class="col-md-6">
+          <div class="col-md-12">
+             <!-- Links -->
 
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28822.230107779953!2d-49.252595!3d-25.445659!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8b0f452491a6f477!2sPontif%C3%ADcia%20Universidade%20Cat%C3%B3lica%20do%20Paran%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1604505796308!5m2!1spt-BR!2sbr"
-              width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-              tabindex="0"></iframe>
+             <ul>
+              
+              
+
+              
+                 <h6 class =" text-center text-info">Horário de Atendimento</h6>
+
+                 <h6 class =" text-center">de segunda a sexta das 08h00 às 18h00 ou com horário marcado</h6><br>
+
+                 <h6 class =" text-center">Rua Imaculada Conceição, 1155  - Prado Velho - Curitiba - PR  -  Fone: 41-3271-1555</h6><br>
+              
+           </div>
 
 
           </div>
-
-
-          <div>
-            <!-- Links -->
-            <h1 class="display-4 textoContato">Contato</h1>
-
-            <ul>
-              <li>
-                <h6>(41) 98851-2577</h6>
-              </li>
-              <li>
-                <h6>sunflowerdelivery@gmail.com</h6>
-              </li>
-          </div>
+        
           <!-- Grid column -->
 
           <hr class="clearfix w-100 d-md-none">
@@ -307,8 +306,8 @@
       <!-- Social buttons -->
       <ul class="list-unstyled list-inline text-center">
         <li class="list-inline-item">
-          <a class="btn-floating btn-fb mx-2">
-            <i class="fab fa-facebook-f">
+          <a href="https://www.facebook.com/" class="btn-floating btn-fb mx-2">
+            <i>
               <img src="imagens/facebook.png" alt="some text" width=35 height=35>
             </i>
           </a>
@@ -316,16 +315,16 @@
 
 
         <li class="list-inline-item">
-          <a class="btn-floating btn-gplus mx-2">
-            <i class="fab fa-google-plus-g">
+          <a href="https://br.pinterest.com/" class="btn-floating btn-gplus mx-2">
+            <i>
               <img src="imagens/pinterest.png" alt="some text" width=35 height=35>
             </i>
           </a>
         </li>
 
         <li class="list-inline-item">
-          <a class="btn-floating btn-tw mx-2">
-            <i class="fab fa-twitter">
+          <a href="https://twitter.com/login?lang=pt" class="btn-floating btn-tw mx-2">
+            <i>
               <img src="imagens/twitter.png" alt="some text" width=35 height=35>
             </i>
           </a>
@@ -333,8 +332,8 @@
 
 
         <li class="list-inline-item">
-          <a class="btn-floating btn-li mx-">
-            <i class="fab fa-linkedin-in">
+          <a href="https://www.instagram.com/" class="btn-floating btn-li mx-">
+            <i>
               <img src="imagens/instagram.png" alt="some text" width=35 height=35>
             </i>
           </a>
@@ -342,18 +341,19 @@
 
 
         <li class="list-inline-item">
-          <a class="btn-floating btn-dribbble mx-2">
-            <i class="fab fa-dribbble">
+          <a href="https://www.whatsapp.com/?lang=pt_br" class="btn-floating btn-dribbble mx-2">
+            <i>
               <img src="imagens/whatsapp.png" alt="some text" width=35 height=35>
             </i>
           </a>
         </li>
       </ul>
-      <!-- Social buttons -->
+
+      <hr>
 
       <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+      <div class="footer-copyright text-center py-3">
+        <a> Desenvolvido por Kamylle Wilgozz</a>
       </div>
       <!-- Copyright -->
 

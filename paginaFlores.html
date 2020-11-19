@@ -2,6 +2,9 @@
 <html lang="pt-br">
 
 <head>
+  <script type="text/javascript" src="javascript/funcoes.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN57mkO88IXlQikM9Gp6zA2txiHgxMtJY&callback=initMap" async defer ></script>
+
     <link rel="shortcut icon" href="imagens/girassol.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,9 +97,10 @@
             <div class="card mb-5">
               <img class="card-img-top" src="imagens/produtos/1.png" alt="Imagem de capa do card">
               <div class="card-body">
-                <h5 class="card-title">Orquída Rosa</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <h5 class="card-title">Orquídea Rosa</h5>
+                <p class="card-text">Vaso de orquídeas com diferentes tons de cor-de-rosa por R$52.90
+                
+              </p>
                   <button class="btn btn-outline-success" onclick="addCarrinho('Orquída Rosa','52.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -111,8 +115,8 @@
               <img class="card-img-top" src="imagens/produtos/2.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Tulipas</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Vaso simples de tulipas por R$32,90
+              </p>
                   <button class="btn btn-outline-success" onclick="addCarrinho('Tulipas','32.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -127,8 +131,8 @@
               <img class="card-img-top" src="imagens/produtos/3.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Vaso de Girassóis</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Vaso de girassóis por R$78.90
+                  </p>
                 <button class="btn btn-outline-success" onclick="addCarrinho('Vaso de Girassóis','78.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -143,8 +147,7 @@
               <img class="card-img-top" src="imagens/produtos/4.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Hortênsias</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Hortênsias de cores variadas por R$29.90 </p>
                 <button class="btn btn-outline-success" onclick="addCarrinho('Hortênsias','29.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -159,8 +162,8 @@
               <img class="card-img-top" src="imagens/produtos/5.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Vaso com Lavandas</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Vaso simples de lavandas por R$38.90
+                </p>
                   <button class="btn btn-outline-success" onclick="addCarrinho('Vaso com Lavandas','38.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -175,8 +178,8 @@
               <img class="card-img-top" src="imagens/produtos/6.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Cravo</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Vaso com diferentes tons de cravo por R$42.90
+                </p>
                   <button class="btn btn-outline-success" onclick="addCarrinho('Cravo','42.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -191,8 +194,8 @@
               <img class="card-img-top" src="imagens/produtos/7.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Vaso de Lírios</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Vaso simples de lírios por R$67.90
+                </p>
                   <button class="btn btn-outline-success" onclick="addCarrinho('Lírio','67.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -207,8 +210,8 @@
               <img class="card-img-top" src="imagens/produtos/8.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Jasmim</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Vaso de jasmim por R$59.90
+                </p>
                 <button class="btn btn-outline-success" onclick="addCarrinho('Jasmin','53.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -223,8 +226,8 @@
               <img class="card-img-top" src="imagens/produtos/9.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Camomila</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Vaso de camomila por R$28.90
+                </p>
                 <button class="btn btn-outline-success" onclick="addCarrinho('Camomila','28.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -239,8 +242,8 @@
               <img class="card-img-top" src="imagens/produtos/10.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Vaso de Rosas</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Vaso simples de rosas cor-de-rosa por R$88.90
+                </p>
                   <button class="btn btn-outline-success" onclick="addCarrinho('Rosas cor de rosa','88.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -256,8 +259,8 @@
               <img class="card-img-top" src="imagens/produtos/11.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Rosas Vermelhas</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Vaso simples de rosas vermelhas por R$36.50
+                </p>
                   <button class="btn btn-outline-success" onclick="addCarrinho('Rosas vermelhas','36.50')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -272,8 +275,8 @@
               <img class="card-img-top" src="imagens/produtos/12.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Violeta</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Vaso de violetas por R$24.99
+                </p>
                   <button class="btn btn-outline-success" onclick="addCarrinho('Violeta','24.99')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -288,8 +291,8 @@
               <img class="card-img-top" src="imagens/produtos/13.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Azaleia</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Vaso simples de azaleias com diferentes tons de rosa por R$27.90
+                </p>
                 <button class="btn btn-outline-success" onclick="addCarrinho('Azaleia','27.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -304,8 +307,8 @@
               <img class="card-img-top" src="imagens/produtos/14.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Antúrio</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Vaso com cores variadas de antúrios por R$42.90
+                </p>
                 <button class="btn btn-outline-success" onclick="addCarrinho('Anturio','42.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -320,8 +323,8 @@
               <img class="card-img-top" src="imagens/produtos/15.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Vaso de Begônia</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Vaso de Begônia por R$28.90
+                </p>
                   <button class="btn btn-outline-success" onclick="addCarrinho('Begônia','28.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -336,8 +339,8 @@
               <img class="card-img-top" src="imagens/produtos/16.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Camélia</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Vaso com camélias de cores variadas por R$37.90
+                </p>
                   <button class="btn btn-outline-success" onclick="addCarrinho('Camélia','37.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -352,8 +355,8 @@
               <img class="card-img-top" src="imagens/produtos/17.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Crisântemo</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Vaso com Crisântemos de cores variadas por R$32.90 
+                </p>
                   <button class="btn btn-outline-success" onclick="addCarrinho('Crisântemo','32.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -368,8 +371,8 @@
               <img class="card-img-top" src="imagens/produtos/18.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Vaso de Gérbera</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Vaso com Gérbera de cores variadas por R$43.90
+                </p>
                   <button class="btn btn-outline-success" onclick="addCarrinho('Vaso de Gérbera','43.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -384,19 +387,148 @@
               <img class="card-img-top" src="imagens/produtos/19.png" alt="Imagem de capa do card">
               <div class="card-body">
                 <h5 class="card-title">Vaso de Margarida</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <p class="card-text">Vaso simples de margarida por R$49.90
+                </p>
                   <button class="btn btn-outline-success" onclick="addCarrinho('Vaso de Margarida','49.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
     
           </div>
-
-
-    
     
         </div>
 
+        <div class="tamanhoMapa">
+          <div id="map">
+    
+          </div>
+    
+         </div>
+    
+    
+    
+    
+        <!-- Footer -->
+        <hr>
+        <footer class="page-footer font-small stylish-color-dark pt-4">
+    
+          <!-- Footer Links -->
+          <div class="container text-center text-md-left">
+    
+            <!-- Grid row -->
+            <div class="row">
+    
+              <hr class="clearfix w-100 d-md-none">
+    
+    
+              <div class="col-md-12">
+                 <!-- Links -->
+    
+                 <ul>
+                  
+                  
+    
+                  
+                     <h6 class =" text-center text-info">Horário de Atendimento</h6>
+    
+                     <h6 class =" text-center">de segunda a sexta das 08h00 às 18h00 ou com horário marcado</h6><br>
+    
+                     <h6 class =" text-center">Rua Imaculada Conceição, 1155  - Prado Velho - Curitiba - PR  -  Fone: 41-3271-1555</h6><br>
+                  
+               </div>
+    
+    
+              </div>
+            
+              <!-- Grid column -->
+    
+              <hr class="clearfix w-100 d-md-none">
+    
+    
+              <!-- Grid column -->
+    
+              <hr class="clearfix w-100 d-md-none">
+    
+              <!-- Grid column -->
+              <div class="col-md-2 mx-auto">
+    
+    
+    
+              </div>
+              <!-- Grid column -->
+    
+            </div>
+            <!-- Grid row -->
+    
+          </div>
+          <!-- Footer Links -->
+    
+    
+    
+          <!-- Social buttons -->
+          <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/" class="btn-floating btn-fb mx-2">
+                <i>
+                  <img src="imagens/facebook.png" alt="some text" width=35 height=35>
+                </i>
+              </a>
+            </li>
+    
+    
+            <li class="list-inline-item">
+              <a href="https://br.pinterest.com/" class="btn-floating btn-gplus mx-2">
+                <i>
+                  <img src="imagens/pinterest.png" alt="some text" width=35 height=35>
+                </i>
+              </a>
+            </li>
+    
+            <li class="list-inline-item">
+              <a href="https://twitter.com/login?lang=pt" class="btn-floating btn-tw mx-2">
+                <i>
+                  <img src="imagens/twitter.png" alt="some text" width=35 height=35>
+                </i>
+              </a>
+            </li>
+    
+    
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/" class="btn-floating btn-li mx-">
+                <i>
+                  <img src="imagens/instagram.png" alt="some text" width=35 height=35>
+                </i>
+              </a>
+            </li>
+    
+    
+            <li class="list-inline-item">
+              <a href="https://www.whatsapp.com/?lang=pt_br" class="btn-floating btn-dribbble mx-2">
+                <i>
+                  <img src="imagens/whatsapp.png" alt="some text" width=35 height=35>
+                </i>
+              </a>
+            </li>
+          </ul>
+    
+          <hr>
+    
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">
+            <a> Desenvolvido por Kamylle Wilgozz</a>
+          </div>
+          <!-- Copyright -->
+    
+    
+        </footer>
+        <!-- Footer -->
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 

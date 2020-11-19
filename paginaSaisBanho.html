@@ -2,6 +2,8 @@
 <html lang="pt-br">
 
 <head>
+  <script type="text/javascript" src="javascript/funcoes.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN57mkO88IXlQikM9Gp6zA2txiHgxMtJY&callback=initMap" async defer ></script>
     <link rel="shortcut icon" href="imagens/girassol.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,11 +93,10 @@
             <!--card1-->
     
             <div class="card mb-5">
-              <img class="card-img-top" src="imagens/produtos/35.png" alt="Imagem de capa do card">
+              <img class="card-img-top" src="imagens/produtos/38.png" alt="Imagem de capa do card">
               <div class="card-body">
-                <h5 class="card-title">Sais para banho 1</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <h5 class="card-title">Sal para banho de orquídea</h5>
+                <p class="card-text">Sal para banho de orquídea por R$33.90</p>
                   <button class="btn btn-outline-success" onclick="addCarrinho('Sais para banho 1','33.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -107,11 +108,11 @@
             <!--card2-->
     
             <div class="card mb-5">
-              <img class="card-img-top" src="imagens/produtos/36.png" alt="Imagem de capa do card">
+              <img class="card-img-top" src="imagens/produtos/39.png" alt="Imagem de capa do card">
               <div class="card-body">
-                <h5 class="card-title">Sais para banho 2</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <h5 class="card-title">Sal para banho de rosas</h5>
+                <p class="card-text">Sal para banho de rosas por R$29.90
+                </p>
                   <button class="btn btn-outline-success" onclick="addCarrinho('Sais para banho 2','29.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -123,11 +124,11 @@
             <!--card3-->
     
             <div class="card mb-5">
-              <img class="card-img-top" src="imagens/produtos/37.png" alt="Imagem de capa do card">
+              <img class="card-img-top" src="imagens/produtos/40.png" alt="Imagem de capa do card">
               <div class="card-body">
-                <h5 class="card-title">Sais para banho 3</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
-                  do card.</p>
+                <h5 class="card-title">Sal para banho de lavanda</h5>
+                <p class="card-text">Sal para banho de lavanda por R$28.90
+                </p>
                 <button class="btn btn-outline-success" onclick="addCarrinho('Sais para banho 3','28.90')">Adicionar ao Carrinho</button>
               </div>
             </div>
@@ -135,6 +136,138 @@
           </div>
 
 
+          <div class="tamanhoMapa">
+            <div id="map">
+      
+            </div>
+      
+           </div>
+      
+      
+      
+      
+          <!-- Footer -->
+          <hr>
+          <footer class="page-footer font-small stylish-color-dark pt-4">
+      
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+      
+              <!-- Grid row -->
+              <div class="row">
+      
+                <hr class="clearfix w-100 d-md-none">
+      
+      
+                <div class="col-md-12">
+                   <!-- Links -->
+      
+                   <ul>
+                    
+                    
+      
+                    
+                       <h6 class =" text-center text-info">Horário de Atendimento</h6>
+      
+                       <h6 class =" text-center">de segunda a sexta das 08h00 às 18h00 ou com horário marcado</h6><br>
+      
+                       <h6 class =" text-center">Rua Imaculada Conceição, 1155  - Prado Velho - Curitiba - PR  -  Fone: 41-3271-1555</h6><br>
+                    
+                 </div>
+      
+      
+                </div>
+              
+                <!-- Grid column -->
+      
+                <hr class="clearfix w-100 d-md-none">
+      
+      
+                <!-- Grid column -->
+      
+                <hr class="clearfix w-100 d-md-none">
+      
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+      
+      
+      
+                </div>
+                <!-- Grid column -->
+      
+              </div>
+              <!-- Grid row -->
+      
+            </div>
+            <!-- Footer Links -->
+      
+      
+      
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/" class="btn-floating btn-fb mx-2">
+                  <i>
+                    <img src="imagens/facebook.png" alt="some text" width=35 height=35>
+                  </i>
+                </a>
+              </li>
+      
+      
+              <li class="list-inline-item">
+                <a href="https://br.pinterest.com/" class="btn-floating btn-gplus mx-2">
+                  <i>
+                    <img src="imagens/pinterest.png" alt="some text" width=35 height=35>
+                  </i>
+                </a>
+              </li>
+      
+              <li class="list-inline-item">
+                <a href="https://twitter.com/login?lang=pt" class="btn-floating btn-tw mx-2">
+                  <i>
+                    <img src="imagens/twitter.png" alt="some text" width=35 height=35>
+                  </i>
+                </a>
+              </li>
+      
+      
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/" class="btn-floating btn-li mx-">
+                  <i>
+                    <img src="imagens/instagram.png" alt="some text" width=35 height=35>
+                  </i>
+                </a>
+              </li>
+      
+      
+              <li class="list-inline-item">
+                <a href="https://www.whatsapp.com/?lang=pt_br" class="btn-floating btn-dribbble mx-2">
+                  <i>
+                    <img src="imagens/whatsapp.png" alt="some text" width=35 height=35>
+                  </i>
+                </a>
+              </li>
+            </ul>
+      
+            <hr>
+      
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">
+              <a> Desenvolvido por Kamylle Wilgozz</a>
+            </div>
+            <!-- Copyright -->
+      
+      
+          </footer>
+          <!-- Footer -->
+      
+      
+      
+      
+      
+      
+      
+      
 
 
 

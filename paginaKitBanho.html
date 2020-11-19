@@ -3,289 +3,294 @@
 
 <head>
   <script type="text/javascript" src="javascript/funcoes.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN57mkO88IXlQikM9Gp6zA2txiHgxMtJY&callback=initMap" async defer ></script>
-    <link rel="shortcut icon" href="imagens/girassol.png" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunflower</title>
-    <link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN57mkO88IXlQikM9Gp6zA2txiHgxMtJY&callback=initMap"
+    async defer></script>
+  <link rel="shortcut icon" href="imagens/girassol.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunflower</title>
+  <link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 </head>
 
 <body>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-yellow">
-        <a class="navbar-brand" href="index.html"> <img src="imagens/girassol.png" alt="some text" width=80
-                height=80></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-yellow">
+    <a class="navbar-brand" href="index.html"> <img src="imagens/girassol.png" alt="some text" width=80 height=80></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
 
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
-                    <a class="nav-link" href="index.html">Página inicial<span class="sr-only">(current)</span></a>
-                </li>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">Página inicial<span class="sr-only">(current)</span></a>
+        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="paginaFlores.html">Flores</a>
-                </li>
+        <li class="nav-item">
+          <a class="nav-link" href="paginaFlores.html">Flores</a>
+        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="paginaVelas.html">Velas aromáticas</a>
-                </li>
+        <li class="nav-item">
+          <a class="nav-link" href="paginaVelas.html">Velas aromáticas</a>
+        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" href="paginaKitBanho.html">Kit banhos</a>
-                </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="paginaKitBanho.html">Kit banhos</a>
+        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="paginaEssencias.html">Essências</a>
-                </li>
+        <li class="nav-item">
+          <a class="nav-link" href="paginaEssencias.html">Essências</a>
+        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="paginaSaisBanho.html">Sais para banho</a>
-                </li>
+        <li class="nav-item">
+          <a class="nav-link" href="paginaSaisBanho.html">Sais para banho</a>
+        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="paginaSobreNos.html">Sobre nós</a>
-                </li>
+        <li class="nav-item">
+          <a class="nav-link" href="paginaSobreNos.html">Sobre nós</a>
+        </li>
 
-            </ul>
+      </ul>
 
-            <!--search-->
-            <form class="form-inline my-2 my-lg-0 searchnavbar">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
-            </form>
+      <!--search-->
+      <form class="form-inline my-2 my-lg-0 searchnavbar">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+      </form>
 
-            <!--icone carrinho-->
-      <a href="carrinho.html"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cart3 carrinho" fill="currentColor"
-        xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd"
-          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
-      </svg>
+      <!--icone carrinho-->
+      <a href="carrinho.html"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cart3 carrinho"
+          fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+        </svg>
       </a>
 
       <!--icone pessoa-->
-      <a href="paginaLogin.html"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-person pessoa" fill="currentColor"
-        xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd"
-          d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-      </svg>
+      <a href="paginaLogin.html"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-person pessoa"
+          fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+        </svg>
       </a>
+    </div>
+  </nav>
+
+
+  <div class="container">
+
+    <h1 class="text-center produtosVendidos">Kit Banho</h1>
+
+    <div class="row">
+
+      <div class="col-md-4">
+
+        <!--card1-->
+
+        <div class="card mb-5">
+          <img class="card-img-top" src="imagens/produtos/35.png" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Kit Banho 1</h5>
+            <p class="card-text">Kit com três velas aromáticas cítricas, um sal para banho de rosas e um vaso de cravos
+              por R$67.90
+            </p>
+            <button class="btn btn-outline-success" onclick="addCarrinho('Kit Banho 1','67.90')">Adicionar ao
+              Carrinho</button>
+          </div>
         </div>
-    </nav>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <!--card2-->
+
+        <div class="card mb-5">
+          <img class="card-img-top" src="imagens/produtos/36.png" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Kit Banho 2</h5>
+            <p class="card-text">Kit com duas velas aromáticas de rosas, um sal para banho de lavanda, uma essência de
+              azaléia e um vaso
+              simples de lavanda por R$69.90</p>
+            <button class="btn btn-outline-success" onclick="addCarrinho('Kit Banho 2','69.90')">Adicionar ao
+              Carrinho</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <!--card3-->
+
+        <div class="card mb-5">
+          <img class="card-img-top" src="imagens/produtos/37.png" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Kit Banho 3</h5>
+            <p class="card-text">Kit com três velas aromáticas de lírio, um sal de banho de orquídea, um sabonete de
+              lírio,
+              uma essência de rosas e uma essência cítrica por R$49.90</p>
+            <button class="btn btn-outline-success" onclick="addCarrinho('Kit Banho 3','49.90')">Adicionar ao
+              Carrinho</button>
+          </div>
+        </div>
+
+      </div>
 
 
-    <div class="container">
+      <div class="tamanhoMapa">
+        <div id="map">
 
-        <h1 class="text-center produtosVendidos">Kit Banho</h1>
-    
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <hr>
+    <footer class="page-footer font-small stylish-color-dark pt-4">
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+
+        <!-- Grid row -->
         <div class="row">
-    
-          <div class="col-md-4">
-    
-            <!--card1-->
-    
-            <div class="card mb-5">
-              <img class="card-img-top" src="imagens/produtos/35.png" alt="Imagem de capa do card">
-              <div class="card-body">
-                <h5 class="card-title">Kit Banho 1</h5>
-                <p class="card-text">Kit com três velas aromáticas cítricas, um sal para banho de rosas e um vaso de cravos por R$67.90
-                </p>
-                  <button class="btn btn-outline-success" onclick="addCarrinho('Kit Banho 1','67.90')">Adicionar ao Carrinho</button>
-              </div>
-            </div>
-    
-          </div>
-    
-          <div class="col-md-4">
-    
-            <!--card2-->
-    
-            <div class="card mb-5">
-              <img class="card-img-top" src="imagens/produtos/36.png" alt="Imagem de capa do card">
-              <div class="card-body">
-                <h5 class="card-title">Kit Banho 2</h5>
-                <p class="card-text">Kit com duas velas aromáticas de rosas, um sal para banho de lavanda, uma essência de azaléia e um vaso 
-                simples de lavanda por R$69.90</p>
-                  <button class="btn btn-outline-success" onclick="addCarrinho('Kit Banho 2','69.90')">Adicionar ao Carrinho</button>
-              </div>
-            </div>
-    
-          </div>
-    
-          <div class="col-md-4">
-    
-            <!--card3-->
-    
-            <div class="card mb-5">
-              <img class="card-img-top" src="imagens/produtos/37.png" alt="Imagem de capa do card">
-              <div class="card-body">
-                <h5 class="card-title">Kit Banho 3</h5>
-                <p class="card-text">Kit com três velas aromáticas de lírio, um sal de banho de orquídea, um sabonete de lírio,
-                 uma essência de rosas e uma essência cítrica por R$49.90</p>
-                <button class="btn btn-outline-success" onclick="addCarrinho('Kit Banho 3','49.90')">Adicionar ao Carrinho</button>
-              </div>
-            </div>
-    
+
+          <hr class="clearfix w-100 d-md-none">
+
+
+          <div class="col-md-12">
+            <!-- Links -->
+
+            <ul>
+
+
+              <h6 class=" text-center text-info">Horário de Atendimento</h6>
+
+              <h6 class=" text-center">de segunda a sexta das 08h00 às 18h00 ou com horário marcado</h6><br>
+
+              <h6 class=" text-center">Rua Imaculada Conceição, 1155 - Prado Velho - Curitiba - PR - Fone: 41-3271-1555
+              </h6><br>
+
           </div>
 
 
-          <div class="tamanhoMapa">
-            <div id="map">
-      
-            </div>
-      
-           </div>
-      
-      
-      
-      
-          <!-- Footer -->
-          <hr>
-          <footer class="page-footer font-small stylish-color-dark pt-4">
-      
-            <!-- Footer Links -->
-            <div class="container text-center text-md-left">
-      
-              <!-- Grid row -->
-              <div class="row">
-      
-                <hr class="clearfix w-100 d-md-none">
-      
-      
-                <div class="col-md-12">
-                   <!-- Links -->
-      
-                   <ul>
-                    
-                    
-      
-                    
-                       <h6 class =" text-center text-info">Horário de Atendimento</h6>
-      
-                       <h6 class =" text-center">de segunda a sexta das 08h00 às 18h00 ou com horário marcado</h6><br>
-      
-                       <h6 class =" text-center">Rua Imaculada Conceição, 1155  - Prado Velho - Curitiba - PR  -  Fone: 41-3271-1555</h6><br>
-                    
-                 </div>
-      
-      
-                </div>
-              
-                <!-- Grid column -->
-      
-                <hr class="clearfix w-100 d-md-none">
-      
-      
-                <!-- Grid column -->
-      
-                <hr class="clearfix w-100 d-md-none">
-      
-                <!-- Grid column -->
-                <div class="col-md-2 mx-auto">
-      
-      
-      
-                </div>
-                <!-- Grid column -->
-      
-              </div>
-              <!-- Grid row -->
-      
-            </div>
-            <!-- Footer Links -->
-      
-      
-      
-            <!-- Social buttons -->
-            <ul class="list-unstyled list-inline text-center">
-              <li class="list-inline-item">
-                <a href="https://www.facebook.com/" class="btn-floating btn-fb mx-2">
-                  <i>
-                    <img src="imagens/facebook.png" alt="some text" width=35 height=35>
-                  </i>
-                </a>
-              </li>
-      
-      
-              <li class="list-inline-item">
-                <a href="https://br.pinterest.com/" class="btn-floating btn-gplus mx-2">
-                  <i>
-                    <img src="imagens/pinterest.png" alt="some text" width=35 height=35>
-                  </i>
-                </a>
-              </li>
-      
-              <li class="list-inline-item">
-                <a href="https://twitter.com/login?lang=pt" class="btn-floating btn-tw mx-2">
-                  <i>
-                    <img src="imagens/twitter.png" alt="some text" width=35 height=35>
-                  </i>
-                </a>
-              </li>
-      
-      
-              <li class="list-inline-item">
-                <a href="https://www.instagram.com/" class="btn-floating btn-li mx-">
-                  <i>
-                    <img src="imagens/instagram.png" alt="some text" width=35 height=35>
-                  </i>
-                </a>
-              </li>
-      
-      
-              <li class="list-inline-item">
-                <a href="https://www.whatsapp.com/?lang=pt_br" class="btn-floating btn-dribbble mx-2">
-                  <i>
-                    <img src="imagens/whatsapp.png" alt="some text" width=35 height=35>
-                  </i>
-                </a>
-              </li>
-            </ul>
-      
-            <hr>
-      
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">
-              <a> Desenvolvido por Kamylle Wilgozz</a>
-            </div>
-            <!-- Copyright -->
-      
-      
-          </footer>
-          <!-- Footer -->
-      
-      
-      
-      
-      
-      
-      
-      
+        </div>
+
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        </div>
+        <!-- Grid column -->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="javascript/javascript.js"></script>
+      </div>
+      <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+
+
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a href="https://www.facebook.com/" class="btn-floating btn-fb mx-2">
+        <i>
+          <img src="imagens/facebook.png" alt="some text" width=35 height=35>
+        </i>
+      </a>
+    </li>
+
+
+    <li class="list-inline-item">
+      <a href="https://br.pinterest.com/" class="btn-floating btn-gplus mx-2">
+        <i>
+          <img src="imagens/pinterest.png" alt="some text" width=35 height=35>
+        </i>
+      </a>
+    </li>
+
+    <li class="list-inline-item">
+      <a href="https://twitter.com/login?lang=pt" class="btn-floating btn-tw mx-2">
+        <i>
+          <img src="imagens/twitter.png" alt="some text" width=35 height=35>
+        </i>
+      </a>
+    </li>
+
+
+    <li class="list-inline-item">
+      <a href="https://www.instagram.com/" class="btn-floating btn-li mx-">
+        <i>
+          <img src="imagens/instagram.png" alt="some text" width=35 height=35>
+        </i>
+      </a>
+    </li>
+
+
+    <li class="list-inline-item">
+      <a href="https://www.whatsapp.com/?lang=pt_br" class="btn-floating btn-dribbble mx-2">
+        <i>
+          <img src="imagens/whatsapp.png" alt="some text" width=35 height=35>
+        </i>
+      </a>
+    </li>
+  </ul>
+
+  <hr>
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <a> Desenvolvido por Kamylle Wilgozz</a>
+  </div>
+  <!-- Copyright -->
+
+
+  </footer>
+  <!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="javascript/javascript.js"></script>
 
 </body>
 

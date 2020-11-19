@@ -1,4 +1,17 @@
 
+$(document).ready(function(){
+
+    $("#finalizarCompra").click(function(){
+        window.location.href = "paginaCartao.html"
+    });
+
+    $("#compraFinalizada").click(function(){
+        alert("Compra aprovada com sucesso!");
+    });
+
+});
+
+
 
 function addCarrinho (produto, preco){
   
